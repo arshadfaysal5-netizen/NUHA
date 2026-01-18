@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Nuha ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffd1dc, #c1f0f6);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.3);
+      padding: 40px;
+      border-radius: 25px;
+      max-width: 420px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease;
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 5px;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 0;
+      color: #ffe6f0;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #ff5e8e;
+      color: white;
+      font-size: 1em;
+      cursor: pointer;
+      transition: transform 0.2s, background 0.2s;
+    }
+    button:hover {
+      transform: scale(1.07);
+      background: #ff3f78;
+    }
+    #secret {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.15em;
+    }
+    .date {
+      font-size: 0.95em;
+      opacity: 0.9;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" autoplay loop>
+    <source src="happy-birthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="card">
+    <h1>Happy Birthday 🎂</h1>
+    <h2>Rifat Sharmin Nuha 💖</h2>
+    <div class="date">19 January</div>
+
+    <p>
+      Today is all about smiles,<br>
+      sunshine, and YOU 🌸
+    </p>
+
+    <button onclick="showLove()">Tap for a Cute Surprise 🧸</button>
+
+    <div id="secret">
+      💗 I tried coding perfection…<br>
+      but then I met you ✨<br><br>
+      Happy Birthday Nuha 🎉<br>
+      Stay cute, stay mine 😘
+    </div>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById('secret').style.display = 'block';
+      document.getElementById('bgMusic').play();
+    }
+  </script>
+</body>
+</html>
